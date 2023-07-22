@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #cb3931;
+  --secondary: #f0f0f0;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+h2 {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.summary-section {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary);
+  margin-left: 80px;
+  width: 300px;
+  margin-top: 110px;
+}
+
+.profile-picture {
+  width: 380px;
+  height: 410px;
+  position: absolute;
+  top: 0;
+  right: 120px;
+  z-index: 10;
+}
+
+main {
+  margin: 80px 0 80px 80px;
+  padding: 170px 80px 0 60px;
+  background-color: var(--secondary);
+  height: 450px;
+  position: relative;
+}
+
+.contact-section {
+  color: var(--primary);
+  font-size: 16px;
+  position: absolute;
+  top: 160px;
+  left: 350px;
+}
+
+.contact-section a,
+.contact-section div {
+  font-weight: 500;
+}
+
+.contact-section a {
+  color: var(--primary);
+  display: block;
+  text-decoration: none;
+}
+
+.sub-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary);
+  margin-top: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.social-media-icons a {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.social-media-icons img {
+  height: 20px;
+  width: 20px;
+}
+
+.cv-credentials {
+  display: flex;
+  margin: 0 80px 80px 80px;
+  gap: 120px;
+}
+
+.cv-credentials > div {
+  width: 550px;
+}
+
+.cv-credentials .credintial-info-wrapper {
+  margin-top: 30px;
+}
+
+.credintial-info-wrapper .date {
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.credintial-info-wrapper .job-info {
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.credintial-info-wrapper .job-info span {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .profile-picture {
+    right: 90px;
+    width: 355px;
+    height: 395px;
+  }
+
+  .summary-section {
+    font-size: 10px;
+    font-weight: 500;
+    width: 200px;
+  }
+
+  .contact-section {
+    font-size: 14px;
+    top: 205px;
+    left: 285px;
+  }
+
+  main {
+    padding-top: 220px;
+  }
+
+  .social-media-icons {
+    gap: 15px;
+  }
+
+  .social-media-icons img {
+    height: 15px;
+    width: 15px;
+  }
+
+  .social-media-icons a {
+    width: 15px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .profile-picture {
+    position: static;
+    width: 100%;
+    height: 460px;
+  }
+
+  .summary-section {
+    font-size: 14px;
+    font-weight: 500;
+    width: auto;
+    text-align: justify;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-section {
+    top: 330px;
+    left: 50px;
+    font-size: 12px;
+  }
+
+  main {
+    margin: 50px 0 50px 50px;
+    padding: 110px 10px 50px 50px;
+  }
+
+  .sub-title-wrapper {
+    display: block;
+  }
+
+  .sub-title-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .social-media-icons {
+    margin-top: 12px;
+  }
+
+  .cv-credentials {
+    display: block;
+    margin: 0 50px 50px 50px;
+  }
+
+  .cv-credentials > div {
+    width: auto;
+  }
+
+  .cv-credentials .certi-wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .profile-picture {
+    height: 390px;
+  }
+}
